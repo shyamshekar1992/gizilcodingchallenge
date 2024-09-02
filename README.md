@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+3D Shape Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview The 3D Shape Visualizer is a React application that allows users to create, visualize, and manipulate 3D shapes directly in the browser. Users can create various geometric shapes (like cubes, spheres, cylinders, and cones), edit their dimensions and positions, and render them in a 3D environment powered by Three.js. The application includes a clean and intuitive UI built with Material-UI.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Shape Creation: Users can create shapes with specific types (Cube, Sphere, Cylinder, Cone) and assign them unique names.
+Shape Editing: Dimensions (width, height, depth) and positions (x, y, z) of the shapes can be edited.
+3D Visualization: Shapes are rendered in a 3D environment where users can see the shapes rotate.
+Render Options:
+Render a single shape to edit its properties.
+Render all shapes simultaneously, aligned side by side.
+State Persistence: The application saves shapes to localStorage, so they persist between sessions.
+Responsive UI: The interface is responsive and adapts well to different screen sizes.
+Technologies Used
 
-### `npm start`
+React: Core framework for building the user interface.
+Three.js: JavaScript library used to create and display animated 3D computer graphics.
+Material-UI: React components for faster and easier web development.
+Formik & Yup: Form management and validation for creating and editing shapes.
+Installation and Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ensure you have Node.js installed on your machine. If not, download and install it from Node.js.
+Make sure you have npm or yarn installed as your package manager.
+Installation
 
-### `npm test`
+Clone the repository: git clone https://github.com/yourusername/3d-shape-visualizer.git cd 3d-shape-visualizer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install the dependencies: npm install or yarn install
 
-### `npm run build`
+Start the development server: npm start or yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Open your browser and navigate to http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a Shape:
 
-### `npm run eject`
+Click on the "Create Shape" button.
+Fill in the required fields: Name and Shape Type.
+Click "Create" to add the shape.
+Edit a Shape:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Click the "Render" button next to any shape in the table.
+Adjust the dimensions and positions using the input fields.
+Click "Save Changes" to update the shape.
+Render All Shapes:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click the "Render All" button to visualize all shapes together in the 3D space.
+Close Canvas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Use the "X" button at the top right of the canvas to close the 3D visualization.
