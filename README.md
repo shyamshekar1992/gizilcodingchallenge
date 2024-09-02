@@ -26,7 +26,9 @@ Ensure you have Node.js installed on your machine. If not, download and install 
 Make sure you have npm or yarn installed as your package manager.
 Installation
 
-Clone the repository: git clone https://github.com/yourusername/3d-shape-visualizer.git cd 3d-shape-visualizer
+Clone the repository: git clone https://github.com/shyamshekar1992/gizilcodingchallenge 
+
+cd gizilcodingchallenge
 
 Install the dependencies: npm install or yarn install
 
